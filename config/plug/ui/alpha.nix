@@ -8,10 +8,10 @@
 	"       • ┓      •   ┛    ┓        • ┓ •          ┛          ┓    "
 	" ┏┏┓┏┓┏┓┏┫┏┓┏┓  ┓╋  ╋┏┓  ┣┓┏┓  ┓┏┏┓╋┣┓┓┏┓  ┓┏┏┓┓┏┏┓  ┏┓┏┓┏┓┏┣┓   "
 	" ┗┗┛┛┗┛┗┗┻┗ ┛   ┗┗  ┗┗┛  ┗┛┗   ┗┻┛┗┗┛┗┗┛┗  ┗┫┗┛┗┻┛   ┛ ┗ ┗┻┗┛┗   "
-	"                                           ┛                     "
+	"                                            ┛                    "
 	"							 	  "
 	"								  "
-	"				git@github.com/webmessiah	  "
+	"\t\t\t\t\t\t\t			git@github.com/webmessiah	  "
 	"								  "
       ];
     in
@@ -74,7 +74,7 @@
             position = "center";
           };
           type = "text";
-          val = "https://github.com/webmessia-h/nixvim";
+          val = "https://github.com/webmessia-h/nixvi";
         }
       ];
     };
