@@ -30,8 +30,8 @@
 
     ./plug/snippets/luasnip.nix
 
-    #./plug/statusline/lualine.nix
-    ./plug/statusline/staline.nix
+    ./plug/statusline/lualine.nix
+    #./plug/statusline/staline.nix
 
     ./plug/treesitter/treesitter-context.nix
     ./plug/treesitter/treesitter-textobjects.nix
