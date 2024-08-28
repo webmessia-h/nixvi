@@ -3,16 +3,16 @@
     let
       nixFlake = [
         " •┏           ┓ •             ┓      ┓        ┓                  "
-	" ┓╋  ┏┏┓┏┳┓┏┓╋┣┓┓┏┓┏┓  ┏┏┓┏┓  ┣┓┏┓  ┏┫┏┓┏┓┏┓  ┣┓┓┏  ┏┓  ┏┳┓┏┓┏┓  "
-	" ┗┛  ┛┗┛┛┗┗┗ ┗┛┗┗┛┗┗┫  ┗┗┻┛┗  ┗┛┗   ┗┻┗┛┛┗┗   ┗┛┗┫  ┗┻  ┛┗┗┗┻┛┗╻ "
-	"       • ┓      •   ┛    ┓        • ┓ •          ┛          ┓    "
-	" ┏┏┓┏┓┏┓┏┫┏┓┏┓  ┓╋  ╋┏┓  ┣┓┏┓  ┓┏┏┓╋┣┓┓┏┓  ┓┏┏┓┓┏┏┓  ┏┓┏┓┏┓┏┣┓   "
-	" ┗┗┛┛┗┛┗┗┻┗ ┛   ┗┗  ┗┗┛  ┗┛┗   ┗┻┛┗┗┛┗┗┛┗  ┗┫┗┛┗┻┛   ┛ ┗ ┗┻┗┛┗   "
-	"                                            ┛                    "
-	"							 	  "
-	"								  "
-	"\t\t\t\t\t\t\t			git@github.com/webmessia-h	  "
-	"								  "
+        " ┓╋  ┏┏┓┏┳┓┏┓╋┣┓┓┏┓┏┓  ┏┏┓┏┓  ┣┓┏┓  ┏┫┏┓┏┓┏┓  ┣┓┓┏  ┏┓  ┏┳┓┏┓┏┓  "
+        " ┗┛  ┛┗┛┛┗┗┗ ┗┛┗┗┛┗┗┫  ┗┗┻┛┗  ┗┛┗   ┗┻┗┛┛┗┗   ┗┛┗┫  ┗┻  ┛┗┗┗┻┛┗╻ "
+        "       • ┓      •   ┛    ┓        • ┓ •          ┛          ┓    "
+        " ┏┏┓┏┓┏┓┏┫┏┓┏┓  ┓╋  ╋┏┓  ┣┓┏┓  ┓┏┏┓╋┣┓┓┏┓  ┓┏┏┓┓┏┏┓  ┏┓┏┓┏┓┏┣┓   "
+        " ┗┗┛┛┗┛┗┗┻┗ ┛   ┗┗  ┗┗┛  ┗┛┗   ┗┻┛┗┗┛┗┗┛┗  ┗┫┗┛┗┻┛   ┛ ┗ ┗┻┗┛┗   "
+        "                                            ┛                    "
+        "							 	                                                  "
+        "								                                                  "
+        "\t\t\t\t\t\t\t			git@github.com/webmessia-h	                  "
+        "								                                                  "
       ];
     in
     {
@@ -61,15 +61,15 @@
               (mkButton "f" "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>" "Find File"
                 "Operator"
               )
-	      (mkButton "p" "<CMD>lua require('telescope').extensions.projects.projects{}<CR>" "Projects"
-	        "Operator"
-	      )
+              (mkButton "p" "<CMD>lua require('telescope').extensions.projects.projects{}<CR>" "Projects"
+                "Operator"
+              )
               (mkButton "q" "<CMD>qa<CR>" "Quit" "String")
             ];
         }
         {
           type = "padding";
-          val = 2;
+          val = 6;
         }
         {
           opts = {
