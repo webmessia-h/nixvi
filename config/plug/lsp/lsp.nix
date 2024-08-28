@@ -30,6 +30,7 @@
 	clangd = {
 	  enable = true;
 	};
+  clangd-extensions.enable = true;
         yamlls = {
           enable = true;
         };
