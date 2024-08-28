@@ -29,8 +29,8 @@
 
     ./plug/snippets/luasnip.nix
 
-    ./plug/statusline/lualine.nix
-    #./plug/statusline/staline.nix
+    #./plug/statusline/lualine.nix
+    ./plug/statusline/staline.nix
 
     ./plug/treesitter/treesitter-context.nix
     ./plug/treesitter/treesitter-textobjects.nix
@@ -57,7 +57,7 @@
     ./plug/utils/markview.nix
     ./plug/utils/mini.nix
     ./plug/utils/nvim-autopairs.nix
-    ./plug/utils/obsidian.nix 
+    ./plug/utils/obsidian.nix
     ./plug/utils/oil.nix
     ./plug/utils/ufo.nix
     ./plug/utils/undotree.nix
