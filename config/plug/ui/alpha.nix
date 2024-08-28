@@ -69,7 +69,7 @@
         }
         {
           type = "padding";
-          val = 6;
+          val = 2;
         }
         {
           opts = {
