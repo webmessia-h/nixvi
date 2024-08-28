@@ -44,6 +44,7 @@
     ./plug/ui/nvim-notify.nix
     #./plug/ui/precognition.nix
     ./plug/ui/telescope.nix
+   ./plug/ui/image-nvim.nix
 
     #./plug/utils/harpoon.nix
     ./plug/utils/comment.nix
@@ -55,7 +56,7 @@
     ./plug/utils/markview.nix
     ./plug/utils/mini.nix
     ./plug/utils/nvim-autopairs.nix
-    ./plug/utils/obsidian.nix
+    ./plug/utils/obsidian.nix 
     ./plug/utils/oil.nix
     ./plug/utils/ufo.nix
     ./plug/utils/undotree.nix

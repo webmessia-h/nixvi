@@ -1,7 +1,8 @@
 {
-  plugins.image-nvim = {
+  plugins = {
+    image-nvim = {
   	enable = true;
-	}
+	};
 
   extraConfigLua = ''
      event = { "BufReadPre", "BufNewFile" },
@@ -11,3 +12,5 @@
     },
   }
   '';
+ }
+}
