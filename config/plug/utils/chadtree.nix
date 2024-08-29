@@ -1,0 +1,7 @@
+{
+  plugins = {
+    chadtree = {
+      enable = true;
+    };
+  };
+}
