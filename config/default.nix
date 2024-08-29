@@ -52,7 +52,8 @@
     ./plug/utils/comment.nix
     ./plug/utils/comment-box.nix
     #./plug/utils/flash.nix
-    ./plug/utils/chadtree.nix
+    #./plug/utils/chadtree.nix
+    ./plug/utils/trouble.nix
     ./plug/utils/grapple.nix
     ./plug/utils/graph.nix
     ./plug/utils/hardtime.nix

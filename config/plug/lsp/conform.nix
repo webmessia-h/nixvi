@@ -10,6 +10,9 @@
       notify_on_error = true;
 
       formatters_by_ft = {
+        asm = [ "asmfmt" ];
+        c = [ "clang-format" ];
+        cpp = [ "clang-format" ];
         liquidsoap = [ "liquidsoap-prettier" ];
         python = [ "black" ];
         lua = [ "stylua" ];

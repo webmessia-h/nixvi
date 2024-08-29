@@ -11,7 +11,7 @@
         "                                            ┛                    "
         "							 	                                                  "
         "								                                                  "
-        "\t\t\t\t\t\t\t			git@github.com/webmessia-h	                  "
+        "\t\t\t\t\t\t\t			git@github.com:webmessia-h	                  "
         "								                                                  "
       ];
     in
