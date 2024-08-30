@@ -7,8 +7,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "3rd";
         repo = "diagram.nvim";
-        rev = "master";
-        hash = "sha256-UmF5evvSSRXsIPRVukB8Jy+ovv1w9QEIbkt5LA7fHiA=";
+        rev = "d19b9bb2ca162facc242c357c2802b8cfab6b55c";
+        hash = "sha256-WT6cGIPvBURNtFhC6Kefkwm+GX8jIAW0pzsCzCRcj2k=";
       };
     })
   ];
