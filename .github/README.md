@@ -12,7 +12,7 @@
 <img src="assets/code.png" alt="nixvi">
 
 <details>
-    <summary>More!</summary>
+    <summary>More</summary>
     <img src="assets/dash.png" alt="dashboard">
     <img src="assets/project_files.png" alt="project files">
     <img src="assets/trouble.png" alt="trouble">
