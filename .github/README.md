@@ -6,7 +6,7 @@
     <img src="assets/nix.png" alt="flake logo"  width="150">
 </div>
 
-# Nixvim-based neovim configuration focused on C/C++ development
+<h1 align="center"> Nixvim-based Neovim configuration focused on C/C++ development </h1>
 
 <img src="assets/code.png" alt="nixvi">
 
