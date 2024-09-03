@@ -1,10 +1,13 @@
-# nixvi
+<p align="center">
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Jaini+Purva&duration=1000&pause=1&color=AFAAFFFF&center=true&vCenter=true&multiline=true&random=false&repeat=false&width=435&height=64&lines=nixvi" alt="Typing SVG" />
+  </a>
+</p>
 
 <div align="center">
     <img src="assets/nix.png" alt="flake logo"  width="200">
 </div>
 
-## Nixvim-based neovim configuration focused on C/C++ development
+# Nixvim-based neovim configuration focused on C/C++ development
 
 <img src="assets/code.png" alt="nixvi">
 
