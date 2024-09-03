@@ -1,7 +1,7 @@
-<p align="center">
+<div align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Jaini+Purva&duration=1000&pause=1&color=AFAAFFFF&center=true&vCenter=true&multiline=false&random=false&repeat=false&width=435&height=80&lines=nixvi" alt="Typing SVG" />
   </a>
-</p>
+</div>
 
 <div align="center">
     <img src="assets/nix.png" alt="flake logo"  width="200">
