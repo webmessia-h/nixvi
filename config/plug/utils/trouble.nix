@@ -44,7 +44,7 @@
       {
         __unkeyed = "<leader>x";
         mode = "n";
-        group = "Trouble";
+        group = "trouble";
       }
     ];
   };
@@ -96,4 +96,4 @@
       };
     }
   ];
-  }
+}
