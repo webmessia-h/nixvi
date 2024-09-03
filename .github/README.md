@@ -3,7 +3,7 @@
 </p>
 
 <div align="center">
-    <img src="assets/nix.png" alt="flake logo"  width="200">
+    <img src="assets/nix.png" alt="flake logo"  width="150">
 </div>
 
 # Nixvim-based neovim configuration focused on C/C++ development
