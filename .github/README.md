@@ -1,9 +1,6 @@
-<p align="center">
- <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Jaini+Purva&size=64&pause=1000&color=AFAAFF&center=true&vCenter=true&width=435&height=80&lines=nixvi" alt="Typing SVG" /></a>
-</p>
-
 <div align="center">
-    <img src="assets/nix.png" alt="flake logo"  width="150">
+ <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Jaini+Purva&size=64&pause=1000&color=AFAAFF&center=true&vCenter=true&width=435&height=80&lines=nixvi" alt="Typing SVG" /></a>
+    <img src="assets/nix.png" alt="flake logo"  width="50">
 </div>
 
 <h1 align="center"> Nixvim-based Neovim configuration 
