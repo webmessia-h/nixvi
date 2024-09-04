@@ -12,4 +12,18 @@
       };
     })
   ];
+  extraConfigLua = ''
+        require("diagram").setup({
+      integrations = {
+        require("diagram.integrations.markdown"),
+        require("diagram.integrations.neorg"),
+      },
+      renderer_options = {
+        mermaid = {
+          background = "transparent",
+          theme = "forest",
+        },
+      },
+    })
+  '';
 }

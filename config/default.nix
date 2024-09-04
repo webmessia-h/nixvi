@@ -45,7 +45,7 @@
     ./plug/ui/nvim-notify.nix
     #./plug/ui/precognition.nix
     ./plug/ui/telescope.nix
-    ./plug/ui/image-nvim.nix
+    #./plug/ui/image-nvim.nix
     ./plug/ui/project.nix
 
     #./plug/utils/harpoon.nix
@@ -55,7 +55,7 @@
     #./plug/utils/chadtree.nix
     ./plug/utils/trouble.nix
     ./plug/utils/grapple.nix
-    ./plug/utils/graph.nix
+    #./plug/utils/graph.nix
     ./plug/utils/hardtime.nix
     ./plug/utils/illuminate.nix
     ./plug/utils/markview.nix

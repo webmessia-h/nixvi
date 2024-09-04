@@ -88,6 +88,8 @@
 
       # We don't need to see things like INSERT anymore
       showmode = false;
+      # Clipboard provider
+      clipboard.providers.wl-copy.enable = true;
     };
   };
 }
