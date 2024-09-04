@@ -72,5 +72,7 @@
             default = with pkgs; mkShell { inherit (self'.checks.pre-commit-check) shellHook; };
           };
         };
+      # Expose the NixOS module from NixVim
+      nixosModules.nixvim = nixvim.nixosModules.nixvim;
     };
 }
