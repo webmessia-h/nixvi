@@ -13,12 +13,13 @@
 
     })
   ];
+
   extraConfigLua = ''require("outline").setup({
   vim.keymap.set('n', '<leader>us', ':OutlineOpen<CR>', { noremap = true, silent = true, desc = "Toggle Outline" }),
   opts = { 
     outline_window = {
     -- Where to open the split window: right/left
-    position = 'left',
+    position = 'right',
      -- Percentage or integer of columns
     width = 30,
     -- Whether width is relative to the total width of nvim
@@ -81,6 +82,15 @@
         "Variable",
       }
     },
+  },
+
+  providers = {
+    priority = { 'lsp', 'coc', 'markdown', 'norg' },
+    -- Configuration for each provider (3rd party providers are supported)
+    lsp = {
+      blacklist_clients = {},
+    },
+    
   }
 })
 '';

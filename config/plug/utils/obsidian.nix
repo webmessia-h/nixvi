@@ -1,22 +1,27 @@
 { lib, ... }:
 {
   plugins.obsidian = {
-    enable = lib.mkDefault false;
+    enable = true;
     settings = {
       completion = {
         min_chars = 2;
         nvim_cmp = true;
       };
       new_notes_location = "current_dir";
+      notes_subdir = "~/obsidian/vault/";
       workspaces = [
         {
+          name = "default";
+          path = "~/obsidian/vault/";
+        }
+        /*{
           name = "work";
           path = "~/obsidian/work";
         }
         {
           name = "home";
           path = "~/obsidian/home";
-        }
+        }*/
       ];
       daily_notes = {
         template = "~/obsidian/templates/daily_note_template.md";

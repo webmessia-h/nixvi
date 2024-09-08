@@ -3,6 +3,7 @@
     clangd-extensions = {
       enable = true;
       enableOffsetEncodingWorkaround = true;
+      inlayHints.highlight = "comment";
       ast = {
         roleIcons = {
           type = "";
