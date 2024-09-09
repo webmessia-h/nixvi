@@ -21,24 +21,28 @@
           nvim_cmp = true;
         };
         new_notes_location = "current_dir";
-        notes_subdir = "~/obsidian/vault/";
+        notes_subdir = "~/obsidian/vault/home/notes";
         workspaces = [
           {
             name = "default";
-            path = "~/obsidian/vault/";
+            path = "~/obsidian/vault";
           }
-          /*{
-          name = "work";
-          path = "~/obsidian/work";
-        }
-        {
-          name = "home";
-          path = "~/obsidian/home";
-          }*/
+          {
+            name = "work";
+            path = "~/obsidian/vault/work";
+          }
+          {
+            name = "home";
+            path = "~/obsidian/vault/home";
+          }
+          {
+            name = "wiki";
+            path = "~/obsidian/vault/wiki";
+          }
         ];
         daily_notes = {
           template = "~/obsidian/templates/daily_note_template.md";
-          folder = "~/obsidian/work/daily_notes";
+          folder = "~/obsidian/vault/work/daily_notes";
         };
         mappings = {
           gf = {

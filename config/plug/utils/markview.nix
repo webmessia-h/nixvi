@@ -14,82 +14,87 @@
   ];
 
   extraConfigLua = ''
-  local markview = require("markview");
-  local presets = require("markview.presets");
+        local markview = require("markview");
+        local presets = require("markview.presets");
 
-  markview.setup({
-    headings = presets.headings.glow_labels;
-    Checkboxes = {
-    enable = true,
+        markview.setup({
+          headings = presets.headings.glow_labels;
+          checkboxes = {
+            enable = true,
 
-    checked = {
-        text = "✅", hl = "TabLineSel"
-    },
+            checked = {
+                text = "✓" --, hl = "TabLineSel"
+            },
 
-    unchecked = {},
-    pending = {},
+            unchecked = {
+               text = "X"
+            },
 
-    custom = {
-        {
-            match = "~",
-            text = "◕",
-            hl = "CheckboxProgress"
-        }
-    }
-  };
+            pending = {
+              text = "⁕",
+              hl = "DiagnosticVirtualTextWarn"
+            },
 
-  latex = {
-    enable = true,
+            custom = {
+              {
+                  match = "~",
+                  text = "◕",
+                  hl = "CheckboxProgress"
+              }
+            }
+          };
+          latex = {
+            enable = false,
 
-    brackets = {
-        enable = true,
-        opening = {
-            { "(", "MarkviewHeading1Sign" },
-            { "{", "MarkviewHeading2Sign" },
-            { "[", "MarkviewHeading3Sign" },
-        },
-        closing = {
-            { ")", "MarkviewHeading1Sign" },
-            { "}", "MarkviewHeading2Sign" },
-            { "]", "MarkviewHeading3" },
-        },
+            brackets = {
+              enable = true,
+              opening = {
+                  { "(", "MarkviewHeading1Sign" },
+                  { "{", "MarkviewHeading2Sign" },
+                  { "[", "MarkviewHeading3Sign" },
+              },
+              closing = {
+                  { ")", "MarkviewHeading1Sign" },
+                  { "}", "MarkviewHeading2Sign" },
+                  { "]", "MarkviewHeading3" },
+              },
 
-        -- scope = {
-        --  "DiagnosticVirtualTextError",
-        --  "DiagnosticVirtualTextOk",
-        --  "DiagnosticVirtualTextWarn",
-        -- }
-    },
+              -- scope = {
+              --  "DiagnosticVirtualTextError",
+              --  "DiagnosticVirtualTextOk",
+              --  "DiagnosticVirtualTextWarn",
+              -- }
+            },
 
-    -- Hides $$ inside lines
-    inline = {
-        enable = true
-    },
+            -- Hides $$ inside lines
+          inline = {
+              enable = true
+          },
 
-    -- Highlights lines within $$ $$
-    block = {
-        hl = "Code",
-        text = { " Latex ", "Special" }
-    },
+            -- Highlights lines within $$ $$
+          block = {
+              hl = "Code",
+              text = { " Latex ", "Special" }
+          },
 
-    -- Symbols, e.g. \geq
-    symbols = {
-        enable = true,
-        -- Your own set of symbols, e.g.
-        -- {
-        --   name = "symbol"
-        -- }
-        overwrite = {}
-    },
+            -- Symbols, e.g. \geq
+          symbols = {
+              enable = true,
+              -- Your own set of symbols, e.g.
+              -- {
+              --   name = "symbol"
+              -- }
+              overwrite = {}
+          },
 
-    subscript = {
-        enable = true
-    },
-    superscript = {
-        enable = true
-    },
-  };
-  vim.cmd("Markview enableAll");
-  });
-    '';
+          subscript = {
+              enable = true
+          },
+          superscript = {
+              enable = true
+          },
+        };
+    });
+    vim.cmd("Markview enableAll");
+  '';
 }
