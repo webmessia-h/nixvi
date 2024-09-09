@@ -8,7 +8,7 @@
         owner = "OXY2DEV";
         repo = "markview.nvim";
         rev = "refs/tags/v${version}";
-        hash = "sha256-mhRg/cszW/3oXdC1yvbpCeqWQA9WLW5FvcqGd/wBTnE=";
+        hash = "sha256-LBDPTWmFzVsX9OWc6Zo8iilczYbVR4cxNA2Fgirg4/Y=";
       };
     })
   ];
