@@ -14,6 +14,6 @@
   ];
 
   extraConfigLua = ''
-    im.api.nvim_set_keymap('n', '<leader>p', ':lua require("nabla").popup()<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>p', ':lua require("nabla").popup()<CR>', { noremap = true, silent = true })
   '';
 }
