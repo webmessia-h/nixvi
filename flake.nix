@@ -4,14 +4,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    
+
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    #plugin-graph.url = "https://github.com/3rd/diagram.nvim";
-    #plugin-graph.flake = false;
 
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
@@ -20,12 +17,11 @@
   };
 
   outputs =
-    {
-      nixpkgs,
-      nixvim,
-      flake-parts,
-      pre-commit-hooks,
-      ...
+    { nixpkgs
+    , nixvim
+    , flake-parts
+    , pre-commit-hooks
+    , ...
     }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
@@ -36,12 +32,11 @@
       ];
 
       perSystem =
-        {
-          system,
-          pkgs,
-          self',
-          lib,
-          ...
+        { system
+        , pkgs
+        , self'
+        , lib
+        , ...
         }:
         let
           nixvim' = nixvim.legacyPackages.${system};
@@ -72,5 +67,5 @@
             default = with pkgs; mkShell { inherit (self'.checks.pre-commit-check) shellHook; };
           };
         };
-   };
+    };
 }

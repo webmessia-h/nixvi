@@ -14,11 +14,9 @@
   ];
 
   extraConfigLua = ''
-    vim.api.nvim_set_keymap('n', '<leader>p', ':lua require("nabla").popup()<CR>', { noremap = true, silent = true })
-    require('nabla').enable_virt({
-    conceal_char = " ",
-    autogen = true, -- auto-regenerate ASCII art when exiting insert mode
-    silent = true,     -- silents error messages
-    })
-  '';
+  vim.api.nvim_set_keymap('n', '<leader>p', ':Virtline<CR>', { noremap = true, silent = true })
+
+  vim.cmd([[
+    command! Virtline lua require("nabla").toggle_virt()
+  ]])'';
 }
