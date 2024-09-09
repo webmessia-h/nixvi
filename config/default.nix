@@ -46,6 +46,7 @@
     ./plug/ui/telescope.nix
     #./plug/ui/image-nvim.nix
     ./plug/ui/project.nix
+    ./plug/ui/nabla.nix
 
     #./plug/utils/harpoon.nix
     ./plug/utils/comment.nix
@@ -55,7 +56,7 @@
     ./plug/utils/trouble.nix
     ./plug/utils/grapple.nix
     #./plug/utils/graph.nix
-    ./plug/utils/hardtime.nix
+    #./plug/utils/hardtime.nix
     ./plug/utils/illuminate.nix
     ./plug/utils/markview.nix
     ./plug/utils/mini.nix

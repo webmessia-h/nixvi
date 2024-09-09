@@ -8,11 +8,12 @@
         owner = "jbyuki";
         repo = "nabla.nvim";
         rev = "27a6ea9ed7452bb9e0b19eb0942b5bcf7d051b2f";
-        hash = "";
+        hash = "sha256-4M2IFzgJupw7bUqdDqoAhZOgW96BeowjhbHzpYw2zbY=";
       };
     })
   ];
 
   extraConfigLua = ''
-    nnoremap <leader>p :lua require("nabla").popup()<CR> '';
+    im.api.nvim_set_keymap('n', '<leader>p', ':lua require("nabla").popup()<CR>', { noremap = true, silent = true })
+  '';
 }
