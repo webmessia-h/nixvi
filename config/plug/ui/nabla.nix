@@ -14,7 +14,7 @@
   ];
 
   extraConfigLua = ''
-  vim.api.nvim_set_keymap('n', '<leader>p', ':Virtline<CR>', { noremap = true, silent = true })
+  vim.api.nvim_set_keymap('n', '<leader>v', ':Virtline<CR>', { noremap = true, silent = true })
 
   vim.cmd([[
     command! Virtline lua require("nabla").toggle_virt()
