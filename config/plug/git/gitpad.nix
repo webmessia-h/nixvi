@@ -3,12 +3,12 @@
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
       pname = "gitpad.nvim";
-      version = "1.0"
+      version = "1.0";
         src = pkgs.fetchFromGitHub {
       owner = "yujinyuz";
       repo = "gitpad.nvim";
       rev = "1e0f6fa335c72c05d1d3635120c572e198e5ae0d";
-      hash = "";
+      hash = "sha256-mtSb7bpa//kr9DKsABK57J8NpS3TgLiv4ASru0ztCQ0=";
     };
     })
   ];
