@@ -36,6 +36,7 @@ If you add a new configuration file, remember to add it to the
   - **[gitsigns](../config/plug/git/gitsigns.nix):** Git integration for buffers
   - **[lazygit](../config/plug/git/lazygit.nix):** The **best** git TUI, as a neovim plugin
   - **[worktree](../config/plug/git/worktree.nix):** Make using git worktrees easier
+  - **[gitpad](../config/plug/git/gitpad.nix):** Provides minimal per-Project/File/Branch note taking
 - **[lsp/](../config/plug/lsp)**
   - **[conform](../config/plug/lsp/conform.nix):** Formatter plugin
   - **[fidget](../config/plug/lsp/fidget.nix):** LSP progress notifications
