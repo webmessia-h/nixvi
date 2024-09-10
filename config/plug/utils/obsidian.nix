@@ -20,26 +20,14 @@
           min_chars = 2;
           nvim_cmp = true;
         };
-        new_notes_location = "current_dir";
-        notes_subdir = "notes";
         workspaces = [
           {
             name = "default";
-            path = "~/obsidian/vault";
-          }
-          {
-            name = "work";
-            path = "~/obsidian/vault/work";
-          }
-          {
-            name = "home";
-            path = "~/obsidian/vault/home";
-          }
-          {
-            name = "wiki";
-            path = "~/obsidian/vault/wiki";
+            path = "~/obsidian/vault/";
           }
         ];
+        new_notes_location = "current_dir";
+        notes_subdir = "notes";
         daily_notes = {
           template = "~/obsidian/templates/daily_note_template.md";
           folder = "work/daily_notes";
