@@ -21,7 +21,7 @@
           nvim_cmp = true;
         };
         new_notes_location = "current_dir";
-        notes_subdir = "~/obsidian/vault/home/notes";
+        notes_subdir = "notes";
         workspaces = [
           {
             name = "default";
@@ -42,7 +42,7 @@
         ];
         daily_notes = {
           template = "~/obsidian/templates/daily_note_template.md";
-          folder = "~/obsidian/vault/work/daily_notes";
+          folder = "work/daily_notes";
         };
         mappings = {
           gf = {
