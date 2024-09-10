@@ -17,7 +17,7 @@
     ./plug/git/gitsigns.nix
     ./plug/git/lazygit.nix
     ./plug/git/worktree.nix
-
+    ./plug/git/gitpad.nix
     ./plug/lsp/conform.nix
     ./plug/lsp/fidget.nix
     ./plug/lsp/hlchunk.nix
