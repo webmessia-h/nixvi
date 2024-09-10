@@ -15,6 +15,7 @@
     <img src="assets/project_files.png" alt="project files">
     <img src="assets/trouble.png" alt="trouble">
     <img src="assets/markdown.png" alt="markdown">
+    <img src="assets/LaTeX.png" alt="LaTeX rendering">
     </details>
 
 ## Configuring
@@ -61,7 +62,8 @@ If you add a new configuration file, remember to add it to the
   - **[precognition](../config/plug/ui/precognition.nix):** Show inline navigation hint
   - **[telescope](../config/plug/ui/telescope.nix):** Best plugin ever
   - **[image-nvim](../config/plug/ui/image-nvim.nix):** Render images in markdown
-  - **[proect](../config/plug/ui/project.nix):** Project managing
+  - **[project](../config/plug/ui/project.nix):** Project managing
+  - **[nabla](../config/plug/ui/nabla.nix):** LaTeX support
 - **[utils/](../config/plug/utils)**
 
   - **[comment](../config/plug/utils/comment.nix):** Quickly toggle comments
@@ -87,7 +89,7 @@ If you add a new configuration file, remember to add it to the
 
 To test your configuration simply run the following command
 
-```
+```shell
 nix run .
 ```
 
