@@ -38,7 +38,7 @@
             custom = {
               {
                   match = "~",
-                  text = "◕",
+                  text = "!",
                   hl = "CheckboxProgress"
               }
             }
