@@ -16,7 +16,11 @@
     require('gitpad').setup({
       -- your configuration comes here
       -- or leave it empty to use the default settings
-      -- refer to the configuration section below
+      on_attach = function(bufnr)
+    -- You can also define a function to be called when the gitpad window is opened, by setting the `on_attach` option:
+    -- This is just an example
+      vim.api.nvim_buf_set_keymap(bufnr, 'n', 'q', '<Cmd>wq<CR>', { noremap = true, silent = true })
+    end,
     })
 
     local wk = require("which-key")
