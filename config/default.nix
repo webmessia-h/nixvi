@@ -51,6 +51,7 @@
 
     #./plug/utils/harpoon.nix
     ./plug/utils/comment.nix
+    ./plug/utils/wakatime.nix
     ./plug/utils/comment-box.nix
     #./plug/utils/flash.nix
     #./plug/utils/chadtree.nix
