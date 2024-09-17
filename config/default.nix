@@ -47,6 +47,7 @@
     #./plug/ui/image-nvim.nix
     ./plug/ui/project.nix
     ./plug/ui/nabla.nix
+    ./plug/ui/edgy.nix
 
     #./plug/utils/harpoon.nix
     ./plug/utils/comment.nix
