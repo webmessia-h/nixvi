@@ -21,7 +21,7 @@
         "latex"
         "markdown"
       ];
-      command = "setlocal spell spelllang=en,uk | set conceallevel=1";
+      command = "setlocal spell spelllang=en,uk | set conceallevel=1 | set linebreak | set textwidth=80 ";
     }
   ];
 }
