@@ -13,6 +13,26 @@
       diagnostics = {
         statix.enable = true;
         yamllint.enable = true;
+        cppcheck = {
+          enable = true;
+          settings = {
+            disabled_filetypes = [
+            ];
+            extra_args = [
+              "--check-level=exhaustive"
+              "--enable=warning,style,performance,portability"
+              "--template=gcc"
+              #"--addon=misra.py"
+            ];
+            extra_filetypes = [
+              "cpp"
+              "c"
+              "h"
+              "hpp"
+            ];
+          };
+        };
+        checkmake.enable = true;
       };
       formatting = {
         nixpkgs_fmt.enable = true;
@@ -33,6 +53,7 @@
             }
           '';
         };
+        clang_format.enable = true;
         stylua.enable = true;
         yamlfmt.enable = true;
       };

@@ -27,10 +27,10 @@
         gopls = {
           enable = true;
         };
-	clangd = {
-	  enable = true;
-	};
-         yamlls = {
+        clangd = {
+          enable = true;
+        };
+        yamlls = {
           enable = true;
         };
       };
