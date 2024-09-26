@@ -11,7 +11,6 @@
 
     ./plug/completion/cmp.nix
     ./plug/completion/lspkind.nix
-    ./plug/completion/schemastore.nix
 
     ./plug/git/gitlinker.nix
     ./plug/git/gitsigns.nix

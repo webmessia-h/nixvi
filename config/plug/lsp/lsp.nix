@@ -6,12 +6,6 @@
     lsp = {
       enable = true;
       servers = {
-        eslint = {
-          enable = true;
-        };
-        html = {
-          enable = true;
-        };
         lua-ls = {
           enable = true;
         };
@@ -24,14 +18,19 @@
         pyright = {
           enable = true;
         };
-        gopls = {
-          enable = true;
-        };
         clangd = {
           enable = true;
-        };
-        yamlls = {
-          enable = true;
+          cmd = [
+            "clangd"
+            "--clang-tidy"
+            "--clang-tidy-checks=*"
+            "--all-scopes-completion"
+            "--cross-file-rename"
+            "--completion-style=detailed"
+            "--header-insertion-decorators"
+            "--header-insertion=iwyu"
+            "--pch-storage=memory"
+          ];
         };
       };
       keymaps = {

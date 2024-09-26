@@ -12,7 +12,6 @@
       };
       diagnostics = {
         statix.enable = true;
-        yamllint.enable = true;
         cppcheck = {
           enable = true;
           settings = {
@@ -27,8 +26,6 @@
             extra_filetypes = [
               "cpp"
               "c"
-              "h"
-              "hpp"
             ];
           };
         };
@@ -55,7 +52,6 @@
         };
         clang_format.enable = true;
         stylua.enable = true;
-        yamlfmt.enable = true;
       };
     };
   };
