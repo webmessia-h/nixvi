@@ -6,7 +6,7 @@
     };
     ui = {
       border = "rounded"; # One of none, single, double, rounded, solid, shadow
-      codeAction = "💡"; # Can be any symbol you want 💡
+      codeAction = "⁕"; # Can be any symbol you want 💡
     };
     hover = {
       openCmd = "!firefox"; # Choose your browser
@@ -16,6 +16,7 @@
       borderFollow = true;
       diagnosticOnlyCurrent = false;
       showCodeAction = true;
+      extendRelatedInformation = true;
     };
     symbolInWinbar = {
       enable = true; # Breadcrumbs

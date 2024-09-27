@@ -61,6 +61,15 @@
     }
     {
       mode = "n";
+      key = "<leader>us";
+      action = "<cmd>Trouble symbols toggle focus=false<cr>";
+      options = {
+        desc = "Symbols toggle";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>xX";
       action = "<cmd>Trouble preview_split toggle filter.buf=0<cr>";
       options = {
