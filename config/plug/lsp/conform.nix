@@ -23,10 +23,6 @@
             "prettier"
           ]
         ];
-        yaml = [
-          "yamllint"
-          "yamlfmt"
-        ];
       };
     };
   };

@@ -30,7 +30,6 @@ If you add a new configuration file, remember to add it to the
 - **[completion/](../config/plug/completion)**
   - **[nvim-cmp](../config/plug/completion/cmp.nix):** Completion plugin for nvim + emoji support
   - **[lspkind](../config/plug/completion/lspkind.nix):** vscode-like pictograms for neovim lsp completion items
-  - **[schemastore.nvim](../config/plug/completion/schemastore.nix):** Schemastore integration
 - **[git/](../config/plug/git)**
   - **[gitlinker](../config/plug/git/gitlinker.nix):** Generate shareable file permalinks
   - **[gitsigns](../config/plug/git/gitsigns.nix):** Git integration for buffers
@@ -56,11 +55,9 @@ If you add a new configuration file, remember to add it to the
   - **[treesitter](../config/plug/treesitter/treesitter.nix):** Parser generator tool to build a syntax tree of the current buffer
 - **[ui/](../config/plug/ui)**
   - **[alpha](../config/plug/ui/alpha.nix):** Dashboard
-  - **[btw](../config/plug/ui/btw.nix):** Writes a small message as startup screen
   - **[bufferline](../config/plug/ui/bufferline.nix):** VSCode like line for buffers
   - **[noice](../config/plug/ui/noice.nix):** Better nvim UI
   - **[nvim-notify](../config/plug/ui/nvim-notify.nix):** Notification manager
-  - **[precognition](../config/plug/ui/precognition.nix):** Show inline navigation hint
   - **[telescope](../config/plug/ui/telescope.nix):** Best plugin ever
   - **[image-nvim](../config/plug/ui/image-nvim.nix):** Render images in markdown
   - **[project](../config/plug/ui/project.nix):** Project managing

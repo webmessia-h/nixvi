@@ -35,29 +35,24 @@
     ./plug/treesitter/treesitter.nix
 
     ./plug/ui/alpha.nix
-    #./plug/ui/btw.nix
-    #./plug/ui/outline.nix
     ./plug/ui/bufferline.nix
     ./plug/ui/indent-blankline.nix
     ./plug/ui/noice.nix
     ./plug/ui/nvim-notify.nix
-    #./plug/ui/precognition.nix
     ./plug/ui/telescope.nix
     #./plug/ui/image-nvim.nix
     ./plug/ui/project.nix
     ./plug/ui/nabla.nix
-    ./plug/ui/edgy.nix
 
     #./plug/utils/harpoon.nix
     ./plug/utils/comment.nix
     ./plug/utils/wakatime.nix
     ./plug/utils/comment-box.nix
-    #./plug/utils/flash.nix
-    #./plug/utils/chadtree.nix
+    ./plug/utils/flash.nix
     ./plug/utils/trouble.nix
     ./plug/utils/grapple.nix
     #./plug/utils/graph.nix
-    #./plug/utils/hardtime.nix
+    ./plug/utils/hardtime.nix
     ./plug/utils/illuminate.nix
     ./plug/utils/markview.nix
     ./plug/utils/mini.nix
