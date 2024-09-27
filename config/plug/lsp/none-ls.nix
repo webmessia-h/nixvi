@@ -16,6 +16,8 @@
           enable = true;
           settings = {
             disabled_filetypes = [
+              "h"
+              "hpp"
             ];
             extra_args = [
               "--check-level=exhaustive"
