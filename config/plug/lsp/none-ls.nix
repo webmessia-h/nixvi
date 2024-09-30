@@ -8,7 +8,7 @@
     };
     sources = {
       code_actions = {
-        gitsigns.enable = true;
+        gitsigns.enable = false;
         statix.enable = true;
       };
       diagnostics = {

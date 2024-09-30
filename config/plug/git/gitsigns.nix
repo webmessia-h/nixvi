@@ -1,6 +1,6 @@
 {
   plugins.gitsigns = {
-    enable = true;
+    enable = false;
     settings = {
       trouble = true;
       current_line_blame = true;

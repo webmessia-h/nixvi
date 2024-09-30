@@ -87,11 +87,36 @@ in
             separator.left = "";
             separator.right = "";
           }
+          "diagnostics"
+          {
+            __unkeyed-1 = {
+              __raw = ''
+                opts = function(_, opts)
+                    local trouble = require("trouble")
+                    local symbols = trouble.statusline({
+                      mode = "lsp_document_symbols",
+                      groups = {},
+                      title = false,
+                      filter = { range = true },
+                      format = "{kind_icon}{symbol.name:Normal}",
+                      hl_group = "lualine_c_normal",
+                    })
+                    table.insert(opts.sections.lualine_c, {
+                      symbols.get,
+                      cond = symbols.has,
+                    })
+                 end
+              '';
+            };
+          }
         ];
-        lualine_x = [ "" ];
+        lualine_x = [
+          ""
+        ];
         lualine_y = [
           {
             __unkeyed = "filetype";
+            colored = false;
             icon_only = true;
             separator.left = "";
             separator.right = "";
