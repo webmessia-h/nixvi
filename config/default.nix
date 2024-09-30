@@ -8,7 +8,7 @@
 
     ./plug/colorscheme/biscuit.nix
     ./plug/colorscheme/colorscheme.nix
-
+    ./plug/ui/web-devicons.nix
     ./plug/completion/cmp.nix
     ./plug/completion/lspkind.nix
 

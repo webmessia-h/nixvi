@@ -6,7 +6,7 @@
     };
     ui = {
       border = "rounded"; # One of none, single, double, rounded, solid, shadow
-      codeAction = "⁕ "; # Can be any symbol you want 💡
+      codeAction = "⁕ ";
     };
     hover = {
       openCmd = "!firefox"; # Choose your browser

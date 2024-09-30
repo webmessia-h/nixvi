@@ -12,7 +12,7 @@
       label = {
         uppercase = false;
         rainbow = {
-          enabled = true;
+          enabled = false;
           shade = 5;
         };
       };
