@@ -6,34 +6,36 @@ in
   plugins.lualine = {
     enable = true;
     settings = {
-      globalstatus = true;
-      disabledFiletypes = {
-        statusline = [
-          "dashboard"
-          "alpha"
-          "starter"
-        ];
-      };
-      theme = {
-        normal = {
-          a = {
-            bg = "#nil";
-          };
-          b = {
-            bg = "nil";
-          };
-          c = {
-            bg = "nil";
-          };
-          z = {
-            bg = "nil";
-          };
-          y = {
-            bg = "nil";
+      options = {
+        theme = {
+          normal = {
+            a = {
+              bg = "#nil";
+            };
+            b = {
+              bg = "nil";
+            };
+            c = {
+              bg = "nil";
+            };
+            z = {
+              bg = "nil";
+            };
+            y = {
+              bg = "nil";
+            };
           };
         };
+        globalstatus = true;
+        disabled_filetypes = {
+          statusline = [
+            "dashboard"
+            "alpha"
+            "starter"
+          ];
+        };
       };
-      inactiveSections = {
+      inactive_sections = {
         lualine_x = [
           "filename"
           "filetype"
@@ -42,10 +44,10 @@ in
       sections = {
         lualine_a = [
           {
-            name = "mode";
+            __unkeyed = "mode";
             fmt = "string.lower";
             color = {
-              fg = if config.colorschemes.base16.enable then colors.base04 else "nil";
+              fg = colors.base04;
               bg = "nil";
             };
             separator.left = "";
@@ -54,34 +56,32 @@ in
         ];
         lualine_b = [
           {
-            name = "branch";
-            icon = "";
+            __unkeyed = "branch";
+            icon.__unkeyed = "";
             color = {
-              fg = if config.colorschemes.base16.enable then colors.base04 else "nil";
+              fg = colors.base04;
               bg = "nil";
             };
             separator.left = "";
             separator.right = "";
           }
           {
-            name = "diff";
+            __unkeyed = "diff";
             separator.left = "";
             separator.right = "";
           }
         ];
         lualine_c = [
           {
-            name = "diagnostic";
-            extraConfig = {
-              symbols = {
-                error = " ";
-                warn = " ";
-                info = " ";
-                hint = "󰝶 ";
-              };
+            __unkeyed = "diagnostic";
+            symbols = {
+              error = " ";
+              warn = " ";
+              info = " ";
+              hint = "󰝶 ";
             };
             color = {
-              fg = if config.colorschemes.base16.enable then colors.base04 else "nil";
+              fg = colors.base08;
               bg = "nil";
             };
             separator.left = "";
@@ -91,24 +91,20 @@ in
         lualine_x = [ "" ];
         lualine_y = [
           {
-            name = "filetype";
-            extraConfig = {
-              icon_only = true;
-            };
+            __unkeyed = "filetype";
+            icon_only = true;
             separator.left = "";
             separator.right = "";
           }
           {
-            name = "filename";
-            extraConfig = {
-              symbols = {
-                modified = "";
-                readonly = "👁️";
-                unnamed = "";
-              };
+            __unkeyed = "filename";
+            symbols = {
+              modified = "";
+              readonly = "👁️";
+              unnamed = "";
             };
             color = {
-              fg = if config.colorschemes.base16.enable then colors.base05 else "nil";
+              fg = colors.base05;
               bg = "nil";
             };
             separator.left = "";
@@ -117,9 +113,9 @@ in
         ];
         lualine_z = [
           {
-            name = "location";
+            __unkeyed = "location";
             color = {
-              fg = if config.colorschemes.base16.enable then colors.base0B else "nil";
+              fg = colors.base0B;
               bg = "nil";
             };
             separator.left = "";
@@ -129,23 +125,4 @@ in
       };
     };
   };
-  extraConfigLua = ''
-      opts = function(_, opts)
-      local trouble = require("trouble")
-      local symbols = trouble.statusline({
-        mode = "lsp_document_symbols",
-        groups = {},
-        title = false,
-        filter = { range = true },
-        format = "{kind_icon}{symbol.name:Normal}",
-        -- The following line is needed to fix the background color
-        -- Set it to the lualine section you want to use
-        hl_group = "lualine_c_normal",
-      })
-      table.insert(opts.sections.lualine_c, {
-        symbols.get,
-        cond = symbols.has,
-      })
-    end
-  '';
 }

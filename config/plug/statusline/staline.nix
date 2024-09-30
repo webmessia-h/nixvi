@@ -3,7 +3,7 @@
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
       pname = "staline.nvim";
-      version = "2024-02-05";
+      version = "2024-02-06";
       src = pkgs.fetchFromGitHub {
         owner = "tamton-aquib";
         repo = "staline.nvim";
@@ -14,13 +14,14 @@
   ];
   extraConfigLua = ''
       require("staline").setup({
+        --exclude_fts = { 'NvimTree', 'dashboard', 'lir' },
       sections = {
-        left = { "-mode", " ", "branch" },
-        mid = { "lsp_name" },
+        left = { "mode", " ", "branch" },
+        mid = { "lsp" },
         right = { "file_name", "line_column" },
       },
       inactive_sections = {
-        left = { "-mode", " ", "branch" },
+        left = { "mode", " ", "branch" },
         mid = { "lsp_name" },
         right = { "file_name", "line_column" },
       },
@@ -29,37 +30,36 @@
         right_separator = "  ",
         branch_symbol = " ",
         mod_symbol = "",
-        line_column = "[%l/%L]",
+        line_column = "%l:%L",
         inactive_color = "#80a6f2", --#303030 is the default
         inactive_bgcolor = "none",
       },
       special_table = {
-        lazy = { "Plugins", "💤 " },
         TelescopePrompt = { "Telescope", "  " },
         oil = { "Oil", "󰏇 " },
         lazygit = { "LazyGit", " " },
       },
       mode_icons = {
-        ["n"] = "NORMAL",
-        ["no"] = "NORMAL",
-        ["nov"] = "NORMAL",
-        ["noV"] = "NORMAL",
-        ["niI"] = "NORMAL",
-        ["niR"] = "NORMAL",
-        ["niV"] = "NORMAL",
-        ["i"] = "INSERT",
-        ["ic"] = "INSERT",
-        ["ix"] = "INSERT",
-        ["s"] = "INSERT",
-        ["S"] = "INSERT",
-        ["v"] = "VISUAL",
-        ["V"] = "VISUAL",
-        [""] = "VISUAL",
-        ["r"] = "REPLACE",
-        ["r?"] = "REPLACE",
-        ["R"] = "REPLACE",
-        ["c"] = "COMMAND",
-        ["t"] = "TERMINAL",
+        ["n"] = "normal",
+        ["no"] = "normal",
+        ["nov"] = "normal",
+        ["noV"] = "normal",
+        ["niI"] = "normal",
+        ["niR"] = "normal",
+        ["niV"] = "normal",
+        ["i"] = "insert",
+        ["ic"] = "insert",
+        ["ix"] = "insert",
+        ["s"] = "insert",
+        ["S"] = "insert",
+        ["v"] = "visual",
+        ["V"] = "visual",
+        [""] = "visual",
+        ["r"] = "replace",
+        ["r?"] = "replace",
+        ["R"] = "replace",
+        ["c"] = "command",
+        ["t"] = "terminal",
       },
     })
   '';

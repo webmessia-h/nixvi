@@ -8,7 +8,6 @@
 
     ./plug/colorscheme/biscuit.nix
     ./plug/colorscheme/colorscheme.nix
-    ./plug/ui/web-devicons.nix
     ./plug/completion/cmp.nix
     ./plug/completion/lspkind.nix
 
@@ -17,6 +16,8 @@
     ./plug/git/lazygit.nix
     ./plug/git/worktree.nix
     ./plug/git/gitpad.nix
+    ./plug/git/gitblame.nix
+
     ./plug/lsp/conform.nix
     ./plug/lsp/fidget.nix
     ./plug/lsp/hlchunk.nix
@@ -34,6 +35,9 @@
     ./plug/treesitter/treesitter-textobjects.nix
     ./plug/treesitter/treesitter.nix
 
+    ./plug/ui/web-devicons.nix
+    ./plug/ui/dressing.nix
+    ./plug/ui/smart-splits.nix
     ./plug/ui/alpha.nix
     ./plug/ui/bufferline.nix
     ./plug/ui/indent-blankline.nix
@@ -55,6 +59,7 @@
     ./plug/utils/hardtime.nix
     ./plug/utils/illuminate.nix
     ./plug/utils/markview.nix
+    ./plug/utils/colorizer.nix
     ./plug/utils/mini.nix
     ./plug/utils/nvim-autopairs.nix
     ./plug/utils/obsidian.nix
