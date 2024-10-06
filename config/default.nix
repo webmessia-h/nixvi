@@ -46,7 +46,7 @@
     ./plug/ui/telescope.nix
     #./plug/ui/image-nvim.nix
     ./plug/ui/project.nix
-    ./plug/ui/nabla.nix
+    #./plug/ui/nabla.nix
 
     #./plug/utils/harpoon.nix
     ./plug/utils/comment.nix
@@ -61,6 +61,7 @@
     ./plug/utils/markview.nix
     ./plug/utils/colorizer.nix
     ./plug/utils/mini.nix
+    ./plug/utils/neo-tree.nix
     ./plug/utils/nvim-autopairs.nix
     ./plug/utils/obsidian.nix
     ./plug/utils/oil.nix

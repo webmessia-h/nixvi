@@ -10,6 +10,7 @@
       };
       frecency = {
         enable = true;
+        settings.disable_devicons = true;
       };
       fzf-native = {
         enable = true;

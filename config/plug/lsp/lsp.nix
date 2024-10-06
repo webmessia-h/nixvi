@@ -24,6 +24,7 @@
             "clangd"
             "--clang-tidy"
             "--clang-tidy-checks=*"
+            #"--config-file=/home/webmessia-h/.clang-tidy"
             "--all-scopes-completion"
             "--cross-file-rename"
             "--completion-style=detailed"

@@ -21,14 +21,19 @@
               "hpp"
             ];
             extra_args = [
-              "--check-level=exhaustive"
+              #"--enable=all"
               "--enable=warning,style,performance,portability"
+              "--check-level=exhaustive"
               "--template=gcc"
+              "--std=c17"
+              "--inline-suppr"
+              "--suppress=missingInclude"
+              "--suppress=checkersReport"
               #"--addon=misra.py"
             ];
-            extra_filetypes = [
-              "cpp"
-              "c"
+            rootPatterns = [
+              ".git"
+              "compile_commands.json"
             ];
           };
         };

@@ -5,8 +5,8 @@
       enable = true;
     };
     ui = {
-      border = "rounded"; # One of none, single, double, rounded, solid, shadow
-      codeAction = "⁕ ";
+      border = "solid"; # One of none, single, double, rounded, solid, shadow
+      devicon = true;
     };
     hover = {
       openCmd = "!firefox"; # Choose your browser

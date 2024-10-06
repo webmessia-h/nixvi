@@ -3,98 +3,66 @@
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin rec {
       pname = "markview.nvim";
-      version = "23.1.0";
+      version = "24.0.0";
       src = pkgs.fetchFromGitHub {
         owner = "OXY2DEV";
         repo = "markview.nvim";
         rev = "refs/tags/v${version}";
-        hash = "sha256-LBDPTWmFzVsX9OWc6Zo8iilczYbVR4cxNA2Fgirg4/Y=";
+        hash = "sha256-Bkwhg4RstOSRx+Jmjq5n2xjEkvyZ4Mx85lWn0YqRHxY=";
       };
     })
   ];
 
   extraConfigLua = ''
-        local markview = require("markview");
-        local presets = require("markview.presets");
-
-        markview.setup({
-          headings = presets.headings.glow_labels;
-          checkboxes = {
+    local markview = require("markview");
+    local presets = require("markview.presets");
+    markview.setup({
+        headings = presets.headings.glow,
+        checkboxes = presets.checkboxes.nerd,
+        checkboxes = {
+          enable = true,
+        },
+        latex = {
+          enable = true,
+          brackets = {
             enable = true,
-
-            checked = {
-                text = "✓" --, hl = "TabLineSel"
+            opening = {
+              { "(", "MarkviewHeading1Sign" },
+              { "{", "MarkviewHeading2Sign" },
+              { "[", "MarkviewHeading3Sign" },
             },
-
-            unchecked = {
-               text = "X"
+            closing = {
+              { ")", "MarkviewHeading1Sign" },
+              { "}", "MarkviewHeading2Sign" },
+              { "]", "MarkviewHeading3" },
             },
-
-            pending = {
-              text = "⁕",
-              hl = "DiagnosticVirtualTextWarn"
+            scope = {
+              "DiagnosticVirtualTextError",
+              "DiagnosticVirtualTextOk",
+              "DiagnosticVirtualTextWarn",
             },
-
-            custom = {
-              {
-                  match = "~",
-                  text = "!",
-                  hl = "CheckboxProgress"
-              }
-            }
-          };
-          latex = {
-            enable = false,
-
-            brackets = {
-              enable = true,
-              opening = {
-                  { "(", "MarkviewHeading1Sign" },
-                  { "{", "MarkviewHeading2Sign" },
-                  { "[", "MarkviewHeading3Sign" },
-              },
-              closing = {
-                  { ")", "MarkviewHeading1Sign" },
-                  { "}", "MarkviewHeading2Sign" },
-                  { "]", "MarkviewHeading3" },
-              },
-
-              -- scope = {
-              --  "DiagnosticVirtualTextError",
-              --  "DiagnosticVirtualTextOk",
-              --  "DiagnosticVirtualTextWarn",
-              -- }
-            },
-
-            -- Hides $$ inside lines
+          },
           inline = {
-              enable = true
+            enable = true
           },
-
-            -- Highlights lines within $$ $$
           block = {
-              hl = "Code",
-              text = { " Latex ", "Special" }
+            enable = true,
+            hl = "Code",
+            text = { " Latex ", "Special" }
           },
-
-            -- Symbols, e.g. \geq
           symbols = {
-              enable = true,
-              -- Your own set of symbols, e.g.
-              -- {
-              --   name = "symbol"
-              -- }
-              overwrite = {}
+            enable = true,
+            overwrite = {}
           },
-
+          operators = {
+            enable = true,
+          },
           subscript = {
-              enable = true
+            enable = true
           },
           superscript = {
-              enable = true
+            enable = true
           },
-        };
-    });
-    vim.cmd("Markview enableAll");
-  '';
+        },
+      })'';
 }

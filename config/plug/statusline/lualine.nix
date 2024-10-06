@@ -116,7 +116,7 @@ in
         lualine_y = [
           {
             __unkeyed = "filetype";
-            colored = false;
+            colored = true;
             icon_only = true;
             separator.left = "";
             separator.right = "";
