@@ -17,52 +17,31 @@
     local markview = require("markview");
     local presets = require("markview.presets");
     markview.setup({
-        headings = presets.headings.glow,
-        checkboxes = presets.checkboxes.nerd,
-        checkboxes = {
-          enable = true,
-        },
         latex = {
-          enable = true,
           brackets = {
             enable = true,
-            opening = {
-              { "(", "MarkviewHeading1Sign" },
-              { "{", "MarkviewHeading2Sign" },
-              { "[", "MarkviewHeading3Sign" },
-            },
-            closing = {
-              { ")", "MarkviewHeading1Sign" },
-              { "}", "MarkviewHeading2Sign" },
-              { "]", "MarkviewHeading3" },
-            },
-            scope = {
-              "DiagnosticVirtualTextError",
-              "DiagnosticVirtualTextOk",
-              "DiagnosticVirtualTextWarn",
-            },
+            hl = "@puntuation.brackets",
           },
           inline = {
-            enable = true
+            enable = true,
           },
           block = {
             enable = true,
-            hl = "Code",
-            text = { " Latex ", "Special" }
           },
           symbols = {
             enable = true,
-            overwrite = {}
           },
           operators = {
             enable = true,
           },
           subscript = {
-            enable = true
+            enable = true,
           },
           superscript = {
-            enable = true
+            enable = true,
           },
         },
-      })'';
+        headings = presets.headings.glow,
+       -- checkboxes = presets.checkboxes.nerd,
+    })'';
 }
