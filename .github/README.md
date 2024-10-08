@@ -26,53 +26,76 @@ If you add a new configuration file, remember to add it to the
 
 ### Current plugins
 
+### Current plugins
+
 - **[colorscheme/](../config/plug/colorscheme):** Theme configuration. Current one is [paradise](https://github.com/paradise-theme/paradise)
+
+  - **[biscuit](../config/plug/colorscheme/biscuit.nix):** (additional theme)
+
 - **[completion/](../config/plug/completion)**
+
   - **[nvim-cmp](../config/plug/completion/cmp.nix):** Completion plugin for nvim + emoji support
   - **[lspkind](../config/plug/completion/lspkind.nix):** vscode-like pictograms for neovim lsp completion items
+
 - **[git/](../config/plug/git)**
+
   - **[gitlinker](../config/plug/git/gitlinker.nix):** Generate shareable file permalinks
   - **[gitsigns](../config/plug/git/gitsigns.nix):** Git integration for buffers
   - **[lazygit](../config/plug/git/lazygit.nix):** The **best** git TUI, as a neovim plugin
   - **[worktree](../config/plug/git/worktree.nix):** Make using git worktrees easier
   - **[gitpad](../config/plug/git/gitpad.nix):** Provides minimal per-Project/File/Branch note taking
+  - **[gitblame](../config/plug/git/gitblame.nix):** Show git blame information
+
 - **[lsp/](../config/plug/lsp)**
+
   - **[conform](../config/plug/lsp/conform.nix):** Formatter plugin
   - **[fidget](../config/plug/lsp/fidget.nix):** LSP progress notifications
   - **[hlchunk](../config/plug/lsp/hlchunk.nix):** Highlight useful things like current chunk or indent lines
   - **[lsp](../config/plug/lsp/lsp.nix):** LSP configs
   - **[lspsaga](../config/plug/lsp/lspsaga.nix):** Cool LSP features
   - **[none-ls](../config/plug/lsp/none-ls.nix):** null-ls replacement. Use nvim as LSP
-  - **[clangd-extensions](../config/plug/lsp/clangd-extensions.nix):** inlay hints and much more
+  - **[clangd-extensions](../config/plug/lsp/clangd-extensions.nix):** Inlay hints and much more
+
 - **[snippet/](../config/plug/snippet)**
+
   - **[luasnip](../config/plug/snippet/luasnip.nix):** Snippet engine in lua
+
 - **[statusline/](../config/plug/statusline)**
+
   - **[lualine](../config/plug/statusline/lualine.nix):** Status line for neovim
-  - **[staline](../config/plug/statusline/staline.nix):** Some soviet guy that died a long time ago
+  - **[staline](../config/plug/statusline/staline.nix):** Some Soviet guy that died a long time ago (**commented out**)
+
 - **[treesitter/](../config/plug/treesitter)**
+
   - **[treesitter-context](../config/plug/treesitter/treesitter-context.nix):** Show code context
-  - **[treesitter-textobject](../config/plug/treesitter/treesitter-textobject.nix):** Allow cool text manupulation thanks to TS
+  - **[treesitter-textobject](../config/plug/treesitter/treesitter-textobject.nix):** Allow cool text manipulation thanks to TS
   - **[treesitter](../config/plug/treesitter/treesitter.nix):** Parser generator tool to build a syntax tree of the current buffer
+
 - **[ui/](../config/plug/ui)**
+
   - **[alpha](../config/plug/ui/alpha.nix):** Dashboard
-  - **[bufferline](../config/plug/ui/bufferline.nix):** VSCode like line for buffers
+  - **[bufferline](../config/plug/ui/bufferline.nix):** VSCode-like line for buffers
   - **[noice](../config/plug/ui/noice.nix):** Better nvim UI
   - **[nvim-notify](../config/plug/ui/nvim-notify.nix):** Notification manager
   - **[telescope](../config/plug/ui/telescope.nix):** Best plugin ever
-  - **[image-nvim](../config/plug/ui/image-nvim.nix):** Render images in markdown
   - **[project](../config/plug/ui/project.nix):** Project managing
-  - **[nabla](../config/plug/ui/nabla.nix):** LaTeX support
+  - **[web-devicons](../config/plug/ui/web-devicons.nix):** Adds file type icons
+  - **[dressing](../config/plug/ui/dressing.nix):** Improved UI for `vim.ui` interfaces
+  - **[smart-splits](../config/plug/ui/smart-splits.nix):** Resize splits more intelligently
+  - **[indent-blankline](../config/plug/ui/indent-blankline.nix):** Adds indentation guides
+  - **[image-nvim](../config/plug/ui/image-nvim.nix):** Render images in markdown (**commented out**)
+  - **[nabla](../config/plug/ui/nabla.nix):** LaTeX support (not used anymore; **commented out**)
+
 - **[utils/](../config/plug/utils)**
 
   - **[comment](../config/plug/utils/comment.nix):** Quickly toggle comments
-  - **[comment-box](../config/plug/utils/comment-box.nix):** Comments utilitiesdefaul
+  - **[comment-box](../config/plug/utils/comment-box.nix):** Comment utilities
   - **[flash](../config/plug/utils/flash.nix):** Navigate in file with a few keystrokes
   - **[grapple](../config/plug/utils/grapple.nix):** Quickly switch between buffers (Harpoon replacement)
   - **[hardtime](../config/plug/utils/hardtime.nix):** Learn vim motions, the hard way
-  - **[harpoon](../config/plug/utils/harpoon.nix):** Quickly switch between buffers
   - **[illuminate](../config/plug/utils/illuminate.nix):** Highlight word under the cursor
   - **[markview](../config/plug/utils/markview.nix):** Yet another markdown previewer for neovim
-  - **[mini](../config/plug/utils/mini.nix):** Cool neovim utilities, currently using ai, notify and surround
+  - **[mini](../config/plug/utils/mini.nix):** Cool neovim utilities, currently using `ai`, `notify`, and `surround`
   - **[nvim-autopairs](../config/plug/utils/nvim-autopairs.nix):** Autopairs in nvim
   - **[nvim-colorizer](../config/plug/utils/nvim-colorizer.nix):** Preview colors in neovim
   - **[obsidian](../config/plug/utils/obsidian.nix):** Obsidian integration for nvim
@@ -80,8 +103,12 @@ If you add a new configuration file, remember to add it to the
   - **[ufo](../config/plug/utils/ufo.nix):** Folding plugin
   - **[undotree](../config/plug/utils/undotree.nix):** Undo history visualizer
   - **[whichkey](../config/plug/utils/whichkey.nix):** Popup to display keybindings
-  - **[graph](../config/plug/utils/graph.nix):** Mermaid diagrams renderer
-  - **[trouble](../config/plug/lsp/trouble.nix):** Pretty interface for working with LSP
+  - **[trouble](../config/plug/utils/trouble.nix):** Pretty interface for working with LSP
+  - **[wakatime](../config/plug/utils/wakatime.nix):** Track your coding activity
+  - **[neo-tree](../config/plug/utils/neo-tree.nix):** File explorer tree
+  - **[graph](../config/plug/utils/graph.nix):** Mermaid diagrams renderer (**commented out**)
+  - **[harpoon](../config/plug/utils/harpoon.nix):** Quickly switch between buffers (**commented out**)
+  - **[vim-be-good](../config/plug/utils/vim-be-good.nix):** Game to practice Vim skills (**commented out**)
 
   ## Testing your new configuration
 
